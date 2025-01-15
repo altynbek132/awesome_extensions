@@ -57,4 +57,16 @@ extension PaddingX on Widget {
         ),
         child: this,
       );
+
+  Padding paddingHorizontal(double value, {Key? key}) => Padding(
+        key: key,
+        padding: EdgeInsets.symmetric(horizontal: value),
+        child: this,
+      );
+
+  Padding paddingVertical(double value, {Key? key}) => Padding(
+        key: key,
+        padding: EdgeInsets.symmetric(vertical: value),
+        child: this,
+      );
 }
