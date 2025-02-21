@@ -1,6 +1,10 @@
 import 'package:flutter/widgets.dart';
 
 extension TxtStyle on TextStyle {
+  TextStyle weight(double weight) {
+    return copyWith(fontVariations: [FontVariation('wght', weight)]);
+  }
+
   /// The most thick - FontWeight.w900
   TextStyle get mostThick => copyWith(
         fontWeight: FontWeight.w900,
